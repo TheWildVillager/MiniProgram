@@ -1,0 +1,4 @@
+<!--pages/category/category.wxml-->
+<view>{{message}}</view>
+<button size="mini" bindtap="btnClick">按钮</button>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">授权信息</button>

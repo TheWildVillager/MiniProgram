@@ -1,3 +1,12 @@
 <!--pages/home/home.wxml-->
-<text class="title">home</text>
-<button size="mini">按钮</button>
+<!-- 1.小程序的数据绑定: {{}} -> Mustache语法 -->
+<!-- 2.列表展示: wx:for -->
+<!-- 3.事件监听改变 data -->
+<!-- <button size="mini" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="getUserInfo"
+>
+  获取授权
+</button> -->
+
+<view wx:for="{{list}}" wx:key="{{item.item_id}}">{{item.title}}</view>
